@@ -1,26 +1,18 @@
-package proyecto1;
+package Maid;
 
+import java.util.Scanner;
 
 public class Maid {
- String alumna = "Alondra Alejandra Lopez Medellin"; 
- String alumno = "Daniel Orlando Ceja Olloqui";
-String asignatura = "Fundamentos de programación";
-int semestre= 1;
-public void saludo_alumna(){
-	System.out.println("Hola "+alumna);
-	System.out.println("Bienvenida al semestre "+semestre);
-	System.out.println("De la asignatura "+asignatura);
-}
-public void saludo_alumno(){
-	System.out.println("Hola "+alumno);
-	System.out.println("Bienvenida al semestre "+semestre);
-	System.out.println("De la asignatura "+asignatura);
-}
-	
+   public static void leer() {
+	   int edad;
+	   Scanner obj_leer= new Scanner(System.in);
+	   System.out.println("Proporcione Edad");
+	   edad=obj_leer.nextInt();
+	   System.out.println("Tu edad es: "+edad);
+   }
+   
 	public static void main(String[] args) {
-		Maid objeto_alumno = new Maid();
-		Maid objeto_alumna = new Maid();
-		objeto_alumno.saludo_alumno();
-		objeto_alumna.saludo_alumno();
+    leer();
 	}
+
 }
